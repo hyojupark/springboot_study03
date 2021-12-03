@@ -59,7 +59,7 @@ public class TodoController {
         return ResponseEntity.ok().body(response);
     }
 
-    @GetMapping
+    @PutMapping
     public ResponseEntity<?> updateTodo(@RequestBody TodoDTO dto) {
         String temporaryUserId = "temporary-user";
 
